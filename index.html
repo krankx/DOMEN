@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domeeni registreerimine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .domain-card:hover {
+      transform: translateY(-4px);
+      transition: 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+
+</head>
+
+<body class="bg-light">
+
+<div class="container py-5">
+
+  <div class="row text-center mb-5 mt-4">
+  <div class="col">
+     <span class="text-primary fw-bold">1 <br>Vali domeen</span>
+  </div>
+  <div class="col">
+    2 <br><span class="text-muted fw-bold">KONTAKTANDMED</span>
+  </div>
+  <div class="col">
+    3 <br> <span class="text-muted fw-bold">MAKSA</span>
+  </div>
+</div>
+
+  <div class="row g-4">
+
+    <div class="col-lg-8">
+
+     <div class="card shadow-sm border-0 mb-4">
+  <div class="card-body">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="minudomeen">
+      <select class="form-select" style="max-width: 100px;">
+        <option value=".ee" >.ee</option>
+        <option value=".com">.com</option>
+        <option value=".net">.net</option>
+        <option value=".org">.org</option>
+        <option value=".lv">.lv</option>
+        <option value=".lt">.lt</option>
+      </select>
+      <button class="btn btn-primary"
+              data-bs-toggle="tooltip"
+              data-bs-title="Kontrolli kas domeen on saadaval">
+        Otsi
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <div class="card domain-card border-0 shadow-sm p-4 text-center">
+            <h5 class="mb-2">minudomeen.ee</h5>
+            <p class="text-success mb-3">Saadaval</p>
+            <h4>8.37 €</h4>
+            <small class="text-muted">+ km / aasta</small>
+            <button class="btn btn-outline-primary mt-3 w-100">
+              Lisa tellimusse
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card domain-card border-0 shadow-sm p-4 text-center">
+            <h5 class="mb-2">minudomeen.eu</h5>
+            <p class="text-success mb-3">Saadaval</p>
+            <h4>4.50 €</h4>
+            <small class="text-muted">+ km / aasta</small>
+            <button class="btn btn-outline-primary mt-3 w-100">
+              Lisa tellimusse
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="accordion mt-5" id="infoAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne">
+              MIS ON KAHE PAKETTI ERINEVUS?
+            </button>
+          </h2>
+          <div id="collapseOne"
+               class="accordion-collapse collapse"
+               data-bs-parent="#infoAccordion">
+            <div class="accordion-body">
+              BLABALBLABLABLABLABLALBALBALBALBLABLABLALBALBALBALBLABLAL
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+                            
+    <div class="col-lg-4">
+
+      <div class="card shadow border-0">
+        <div class="card-header bg-white">
+          <strong>Tellimus</strong>
+        </div>
+        <div class="card-body">
+
+          <p class="mb-1"><strong>minudomeen.eu</strong></p>
+          <small class="text-muted">Registreering (1 aasta)</small>
+
+          <hr>
+
+          <h4 class="mb-3">4.50 € + km</h4>
+
+          <form action="form.html">
+      <div class="mb-3">
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Jätka</button>
+    </form>
+  </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t))
+</script>
+
+</body>
+</html>
